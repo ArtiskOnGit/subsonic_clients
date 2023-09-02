@@ -1,0 +1,17 @@
+- name: Substreamer
+  website: https://substreamerapp.com/
+  lyrics: false
+  
+  
+- name: Sonixd
+  website: https://github.com/jeffvli/sonixd
+  lyrics: true
+
+- name: Airsonic-advanced
+  website: https://github.com/airsonic-advanced/airsonic-advanced
+  lyrics: true
+  
+- name: Airsonic-advanced (Kagemomiji version)
+  website: https://github.com/kagemomiji/airsonic-advanced
+  lyrics: true  
+  
