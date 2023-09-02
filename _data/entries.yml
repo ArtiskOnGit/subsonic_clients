@@ -1,0 +1,54 @@
+- name: Client
+  type: link
+  show: true
+  
+- name: Website
+  show: false
+
+- name:  Lyrics
+  type: bool
+  show: true
+
+- name:  Scrobbling
+  type: bool
+  show: true
+
+- name:  Multiple server support
+  type: bool
+  show: true
+
+- name:  Offline Music
+  type: bool
+  show: true
+
+- name:  Max bitrate setting
+  type: bool
+  show: true
+
+- name:  Free
+  type: bool
+  show: true
+
+- name:  License
+  type: string
+  show: true
+
+- name:  Source
+  type: link
+  show: true
+
+- name:  Tested on version
+  type: string
+  show: true
+
+- name:  Date of test
+  type: string
+  show: true
+
+- name: Chromecast
+  type: bool
+  show: true
+  
+- name: Platform
+  type: string
+  show: true

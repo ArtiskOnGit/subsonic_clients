@@ -21,11 +21,12 @@
 title: Subsonic Clients List
 #email: your-email@example.com
 description:
-  I want to create a site of all the subsonic clients for each type of device
+  A list for of all the subsonic clients for each type of device with their capabilites.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://artiskongit.github.io/subsonic_clients.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://artiskongit.github.io/subsonic_clients" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: AlYatrin
 github_username:  TheArtisk
+bluesky_name: biloba.bsky.social
 
 # Build settings
 theme: minima

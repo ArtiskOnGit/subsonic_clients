@@ -1,17 +1,44 @@
-- name: Substreamer
-  website: https://substreamerapp.com/
-  lyrics: false
-  
-  
-- name: Sonixd
-  website: https://github.com/jeffvli/sonixd
-  lyrics: true
+- Client: [Substreamer, https://substreamerapp.com/]
+  Lyrics: false
+  Scrobbling: false
+  Multiple server support: false
+  Offline Music: true
+  Max bitrate setting: true
+  Free: true
+  License: "?"
+  Source: ["?", ""]
+  Tested on version: "6.0.43 (android)"
+  Date of test: "02/09/2023"
+  Chromecast: true
+  Platform: "android, iOS"
 
-- name: Airsonic-advanced
-  website: https://github.com/airsonic-advanced/airsonic-advanced
-  lyrics: true
-  
-- name: Airsonic-advanced (Kagemomiji version)
-  website: https://github.com/kagemomiji/airsonic-advanced
-  lyrics: true  
-  
+
+- Client: [DSub, https://github.com/daneren2005/Subsonic]
+  Lyrics: false
+  Scrobbling: true
+  Multiple server support: true
+  Offline Music: false
+  Max bitrate setting: true
+  Free: true
+  License: GPL v3.0
+  Source: [github, https://github.com/daneren2005/Subsonic]
+  Tested on version: 5.5.3 (android)
+  Date of test: "03/09/2023"
+  Chromecast: true
+  Platform: "android"
+
+- Client: [Sonixd, https://github.com/jeffvli/sonixd/]
+  Lyrics: true
+  Scrobbling: true
+  Multiple server support: true
+  Offline Music: true
+  Max bitrate setting: false
+  Free: true
+  License: GPL v3.0
+  Source: [github, https://github.com/jeffvli/sonixd]
+  Tested on version: 0.15.5 (windows)
+  Date of test: "03/09/2023"
+  Chromecast: true
+  Platform: "windows, linux, mac"
+
+

@@ -3,68 +3,105 @@ title: Subsonic Clients
 date: today
 author: Me
 ---
-## FOR NOW THIS ONLY A TEST PAGE, DON'T RELY ON IT YET
-This will be a list of all Subsonic clients for each device.
-[Download yml data ]({{ site.url }}/_data/clients.yml)
+[Download raw yml data ](https://github.com/ArtiskOnGit/subsonic_clients/blob/main/_data/clients.yml)
 
+
+{% assign platforms = "android, iOS, mac, windows, linux, web" | split: ", " %}
+
+THIS IS A WIP, FEEL FREE TO HELP
+
+# ALL CLIENTS
 <table>
-    <tr>
-        <th>Client</th>
-		<th>Lyrics</th>
-		<th>Scrobbling</th>
-		<th>Multiple server support</th>
-		<th>Offline Music</th>
-		<th>Max bitrate setting</th>
-		<th>Multiple server</th>
-		<th>Free</th>
-		<th></th>
-		<th></th>
-		<th></th>
-		<th></th>
-    </tr>
-	
-	{% for c in site.data.clients %}
-	
-	
-    <tr>
-		<td>
-			<a href = "{{ c.github }}"> 
-				{{ c.name }} 
-			</a> 
-		</td>
-		
-		<td>
-			{% if c.lyrics == true%}
-				✔️
-			{% elsif c.lyrics == false %}
-				❌
-			{% else %}
-				
+	<tr>
+		{% for e in site.data.entries %}
+			{%if e.show == true%}
+			<th>{{ e.name }}	</th>
 			{% endif %}
-		</td>
-		
-		<td>
-		</td>
-		
-		<td>
-		</td>
-		
-		<td>
-		</td>
-		
-		<td>
-		</td>
-		
-		<td>
-		</td>
-		
-		<td>
-		</td>
-    </tr>
+		{% endfor %}
 	
-	
-	
+	</tr>
+	{% for c in site.data.clients %}
+	 
+	<tr>
+		{% for e in site.data.entries %}
+			{%if e.show == true%}
+				 <td>
+					{%if e.type == 'string'%}
+						{{ c[e.name] }}
+						
+					{% elsif  e.type == 'link'%}
+						<a href = "{{c[e.name][1]}}"> 
+							{{c[e.name][0]}} 
+						</a>
+						
+					{% elsif  e.type == 'bool'%}
+						{% if c[e.name]%}
+							✔️
+						{% elsif c[e.name] == false %}
+							❌
+						{% else %}
+					a
+						{% endif %}
+					{% else %}
+					?
+					
+					{% endif %}
+				</td>
+			{% endif %}
+			
+		{% endfor %}
+	</tr>
 	{% endfor %}
 	
 </table>
 
+{% for p in platforms %}
+
+## {{p | upcase}} CLIENTS
+<table>
+	<tr>
+		{% for e in site.data.entries %}
+			{%if e.show == true%}
+			<th>{{ e.name }}	</th>
+			{% endif %}
+		{% endfor %}
+	
+	</tr>
+	{% for c in site.data.clients %}
+	 {% if c.Platform contains p %}
+	<tr>
+		{% for e in site.data.entries %}
+			{%if e.show == true%}
+				 <td>
+					{%if e.type == 'string'%}
+						{{ c[e.name] }}
+						
+					{% elsif  e.type == 'link'%}
+						<a href = "{{c[e.name][1]}}"> 
+							{{c[e.name][0]}} 
+						</a>
+						
+					{% elsif  e.type == 'bool'%}
+						{% if c[e.name]%}
+							✔️
+						{% elsif c[e.name] == false %}
+							❌
+						{% else %}
+					a
+						{% endif %}
+					{% else %}
+					?
+					
+					{% endif %}
+				</td>
+			{% endif %}
+			
+		{% endfor %}
+	</tr>
+	{% endif %}
+	{% endfor %}
+	
+</table>
+
+
+{% endfor %}
