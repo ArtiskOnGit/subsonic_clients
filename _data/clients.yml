@@ -99,7 +99,7 @@
   Chromecast: false
   Platform: "windows, linux, mac"
 
-- Client: [GoSONIC, https://play.google.com/store/apps/details?id=com.readysteadygosoftware.gosonic]
+- Client: ["GoSONIC", "https://play.google.com/store/apps/details?id=com.readysteadygosoftware.gosonic"]
   Lyrics: true
   Scrobbling: true
   Multiple server support: false
