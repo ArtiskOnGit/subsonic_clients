@@ -41,4 +41,76 @@
   Chromecast: true
   Platform: "windows, linux, mac"
 
+- Client: [Subtracks, https://github.com/austinried/subtracks]
+  Lyrics: false
+  Scrobbling: true
+  Multiple server support: true
+  Offline Music: false
+  Max bitrate setting: true
+  Free: true
+  License: GPL v3.0
+  Source: [github, https://github.com/austinried/subtracks]
+  Tested on version: 1.3.0 (android)
+  Date of test: "03/09/2023"
+  Chromecast: false
+  Platform: "android"
 
+
+- Client: [Ultrasonic, https://ultrasonic.gitlab.io/]
+  Lyrics: true
+  Scrobbling: true
+  Multiple server support: true
+  Offline Music: true
+  Max bitrate setting: true
+  Free: true
+  License: GPL v3.0
+  Source: [gitlab, https://gitlab.com/ultrasonic/ultrasonic]
+  Tested on version: 4.6.3 (android)
+  Date of test: "03/09/2023"
+  Chromecast: false
+  Platform: "android"
+
+- Client: [Tauon Music Box, https://tauonmusicbox.rocks/]
+  Lyrics: false
+  Scrobbling: true
+  Multiple server support: true
+  Offline Music: true
+  Max bitrate setting: false
+  Free: true
+  License: GPL v3.0
+  Source: [github, https://github.com/Taiko2k/TauonMusicBox]
+  Tested on version: 7.6.6 (windows)
+  Date of test: "03/09/2023"
+  Chromecast: false
+  Platform: "windows, linux"
+  
+ - Client: [supersonic, https://github.com/dweymouth/supersonic/]
+  Lyrics: false
+  Scrobbling: true
+  Multiple server support: false
+  Offline Music: true
+  Max bitrate setting: false
+  Free: true
+  License: GPL v3.0
+  Source: [github, https://github.com/dweymouth/supersonic]
+  Tested on version: 0.5.1 (windows)
+  Date of test: "03/09/2023"
+  Chromecast: false
+  Platform: "windows, linux, mac"
+
+
+- Client: [GoSONIC, https://play.google.com/store/apps/details?id=com.readysteadygosoftware.gosonic]
+  Lyrics: true
+  Scrobbling: true
+  Multiple server support: false
+  Offline Music: true
+  Max bitrate setting: true
+  Free: false
+  License: ?
+  Source: [?, ?]
+  Tested on version: 1.5.0 (android)
+  Date of test: "03/09/2023"
+  Chromecast: false
+  Platform: "android"
+  
+  
