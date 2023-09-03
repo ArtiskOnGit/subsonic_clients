@@ -83,8 +83,9 @@
   Date of test: "03/09/2023"
   Chromecast: false
   Platform: "windows, linux"
-  
- - Client: [supersonic, https://github.com/dweymouth/supersonic/]
+
+
+- Client: [supersonic, https://github.com/dweymouth/supersonic/]
   Lyrics: false
   Scrobbling: true
   Multiple server support: false
@@ -98,7 +99,6 @@
   Chromecast: false
   Platform: "windows, linux, mac"
 
-
 - Client: [GoSONIC, https://play.google.com/store/apps/details?id=com.readysteadygosoftware.gosonic]
   Lyrics: true
   Scrobbling: true
@@ -106,11 +106,9 @@
   Offline Music: true
   Max bitrate setting: true
   Free: false
-  License: ?
-  Source: [?, ?]
+  License: "?"
+  Source: ["?", "?"]
   Tested on version: 1.5.0 (android)
   Date of test: "03/09/2023"
   Chromecast: false
   Platform: "android"
-  
-  
