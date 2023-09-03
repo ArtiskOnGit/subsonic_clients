@@ -4,6 +4,6 @@ The raw yaml data is [here](https://github.com/ArtiskOnGit/subsonic_clients/blob
 I was inspired by [this repo](https://github.com/basings/selfhosted-music-overview), but wanted to make a clearer version and only for subsonic clients.
 
 ### To potentially do :
-  - being able to toggle on or off the raws of the tables.
+  - being able to toggle on or off the columns of the tables.
   - detailed post for each client
   - add more clients
